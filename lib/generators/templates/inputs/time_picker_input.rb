@@ -13,7 +13,7 @@ class TimePickerInput < SimpleForm::Inputs::StringInput
     template.content_tag :div, class: 'input-append date timepicker' do
       input = super # leave StringInput do the real rendering
       input += template.content_tag :span, class: 'add-on' do
-        template.content_tag :i, '', class: 'icon-time', data: { 'time-icon' => 'icon-time', 'date-icon' => 'icon-calendar' }
+        template.content_tag :i, '', class: 'graphicon graphicon-time', data: { 'time-icon' => 'graphicon graphicon-time', 'date-icon' => 'graphicon graphicon-calendar' }
       end
       input
     end
