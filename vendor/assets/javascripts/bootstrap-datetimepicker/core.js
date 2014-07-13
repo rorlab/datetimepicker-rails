@@ -276,16 +276,16 @@
       offset.top = offset.top + this.height;
 
       var $window = $(window);
-      
+
       if ( this.options.width != undefined ) {
         this.widget.width( this.options.width );
       }
-      
+
       if ( this.options.orientation == 'left' ) {
         this.widget.addClass( 'left-oriented' );
         offset.left   = offset.left - this.widget.width() + 20;
       }
-      
+
       if (this._isInFixed()) {
         position = 'fixed';
         offset.top -= $window.scrollTop();
@@ -1260,12 +1260,12 @@
         (is12Hours ? ' data-hour-format="12"' : '') +
         '>' +
         '<tr>' +
-          '<td><a href="#" class="btn" data-action="incrementHours"><i class="icon-chevron-up"></i></a></td>' +
+          '<td><a href="#" class="btn" data-action="incrementHours"><i class="glyphicon glyphicon-chevron-up"></i></a></td>' +
           '<td class="separator"></td>' +
-          '<td><a href="#" class="btn" data-action="incrementMinutes"><i class="icon-chevron-up"></i></a></td>' +
+          '<td><a href="#" class="btn" data-action="incrementMinutes"><i class="glyphicon glyphicon-chevron-up"></i></a></td>' +
           (showSeconds ?
           '<td class="separator"></td>' +
-          '<td><a href="#" class="btn" data-action="incrementSeconds"><i class="icon-chevron-up"></i></a></td>': '')+
+          '<td><a href="#" class="btn" data-action="incrementSeconds"><i class="glyphicon glyphicon-chevron-up"></i></a></td>': '')+
           (is12Hours ? '<td class="separator"></td>' : '') +
         '</tr>' +
         '<tr>' +
@@ -1282,12 +1282,12 @@
           '</td>' : '') +
         '</tr>' +
         '<tr>' +
-          '<td><a href="#" class="btn" data-action="decrementHours"><i class="icon-chevron-down"></i></a></td>' +
+          '<td><a href="#" class="btn" data-action="decrementHours"><i class="glyphicon glyphicon-chevron-down"></i></a></td>' +
           '<td class="separator"></td>' +
-          '<td><a href="#" class="btn" data-action="decrementMinutes"><i class="icon-chevron-down"></i></a></td>' +
+          '<td><a href="#" class="btn" data-action="decrementMinutes"><i class="glyphicon glyphicon-chevron-down"></i></a></td>' +
           (showSeconds ?
           '<td class="separator"></td>' +
-          '<td><a href="#" class="btn" data-action="decrementSeconds"><i class="icon-chevron-down"></i></a></td>': '') +
+          '<td><a href="#" class="btn" data-action="decrementSeconds"><i class="glyphicon glyphicon-chevron-down"></i></a></td>': '') +
           (is12Hours ? '<td class="separator"></td>' : '') +
         '</tr>' +
       '</table>' +
